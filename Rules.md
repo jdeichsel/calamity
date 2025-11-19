@@ -1,40 +1,10 @@
-- One big draw pile (UNO style)
-  
-- 3 Factions:
-	1. Demon (Early game, stealing cards)
-	2. Human (Late game, buildings to buff units)
-	3. Gods (Mid game, hand trap style to block actions)
-	   
-- Win Condition:
-	1. Kill enemy Hero
-
-- every turn:
-	1. draw 2 cards
-	2. Mulligan: discard up to 2 cards -> redraw the same amount
-	3. playing cards costs Mana
-		-> Mana is a card (30% of the entire draw pile, 1 Mana per card)
-
-- Attacking a hero
-	- deals damage to hero
-	- can only attack when no units
-
-
----
-
-
-
-
-
-
-
-Unnamed Uno Magic Card Game Rules
 
 Start of Game:
 - Each Player gets 3 Random Hero Cards and choses one.
 - Then each Player draws 3 Cards
 
 - Win Condition: 
-	Each hero has a Health total, when it reaches 0 that Player has lost, Play resumes until only 1 hero is still alive.
+	Each hero has a Health total. When it reaches 0 that Player has lost. Play resumes until only 1 hero is still alive.
 
 - Factions:
 	The hero can have 1 of 3 factions: Demon, God or Human
@@ -54,7 +24,6 @@ General Rules:
 - Units
 	Units can be **played** from the hand by paying its corresponding mana cost or **summoned** from the discard pile by a card effect
 
-
 - Attacking
 	**Ready** units may attack during your Turn Phase
 	After a unit attacks, it is **Exhausted** 
@@ -69,7 +38,6 @@ General Rules:
 		1. That Hero has no units on their field
 		2. That Player has finished a turn already
 
-
 - Combat
 	Every Unit has a power stat, once that power reaches 0, it is destroyed
 	
@@ -77,7 +45,6 @@ General Rules:
 	2. If a Unit with 1 Power attacks a unit with 2 power, the unit attacking dies and the unit defending loses 1 power for the turn.
 	3. If a Unit with 2 Power attacks a unit with 2 power, both Units die.
 	4. If a Unit attacks a Hero, that Hero loses Health equal to the Units Power.
-
 
 Gameplay Loop:
 - Start of Turn:
@@ -111,10 +78,11 @@ Gameplay Loop:
 	Triggers on any Players card may still occur
 
 - Effect "Reactions"
-	Upon a Player activating an effect, a card, or declaring an attack; any other Player in clockwise priority may:
+	Upon a Player activating an effect, a card, playing a unit, or declaring an attack; any other Player in clockwise priority may:
 	- Use any effect or card that can be activated during an Opponents Turn Phase
 	- The last effect activated is the first to resolve. All other effects will be resolved in opposite order of activation
 	- If no other Players activated any effects, the Player who activated the first effect may activate another effect 
+	- If a card is destroyed (by another effect) before resolving, the effect will be negated
 
 Key Words:
 Exhausting: "Using" a **Ready** Card, by rotating it 90 degrees clockwise
