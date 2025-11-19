@@ -1,5 +1,3 @@
-gHuman Puman
-asdasd
 
 ### Hero
 
